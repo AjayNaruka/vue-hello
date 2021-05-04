@@ -1,0 +1,30 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.red{
+  color: red;
+}
+.green{
+  color: green;
+}
+img{
+  margin-top: 50px;
+  width: 500px;
+}
+#root{
+  padding: 50px;
+}
+input{
+  margin: 20px;
+  margin-left: 0;
+  padding: 10px;
+  border-radius: 20px;
+  outline: 0;
+}
+button{
+  padding: 15px;
+  border-radius: 10px;
+  outline: 0;
+}

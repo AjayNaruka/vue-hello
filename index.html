@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>VUE</title>
+</head>
+<body>
+  <div id="root">
+    <input type="text" v-model='name' placeholder="Inserisci il tuo nome">
+    <input type="text" v-model='surname' @keyup.enter='creaBenvenuto' placeholder="Inserisci il tuo cognome">
+    <h1 :class='h1Class'>{{toPrintText}}</h1>
+    <!-- <button @click='consolePrint'>STAMPA IN CONSOLE I NOMI</button> -->
+    <input type="text" placeholder="Scegli il colore" v-model='inputColor' @keyup.enter='colorAfterEnter'> <br>
+    <button @click="colora('red')">Colora di Rosso</button>
+    <button @click="colora('green')">Colora di Verde</button><br>
+    <img :src='immagine' alt=""><!-- SRC E' UN ATTRIBUTO => v-binding -->
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
